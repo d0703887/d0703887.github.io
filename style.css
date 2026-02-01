@@ -1,0 +1,245 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    /* Using your background image */
+    background: url('images/background-long.png') no-repeat center center fixed;
+    background-size: cover; 
+    background-color: #121212; /* Fallback if image fails */
+    color: #e0e0e0;
+    line-height: 1.6;
+}
+
+/* Container for centering content */
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Navigation */
+nav {
+    background: #ACBFA4; /* Dark semi-transparent */
+    padding: 20px 0;
+    backdrop-filter: blur(5px);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    border-bottom: 1px solid #333;
+}
+
+.nav-content {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.logo {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.btn-main {
+    background-color: #007bff; /* Blue accent */
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.btn-main:hover {
+    background-color: #0056b3;
+}
+
+/* Hero Section */
+.hero {
+    padding: 30px 0;
+}
+
+.hero-layout {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    background: transparent; /* Improves readability over wallpaper */
+    padding: 40px 40px 0px;
+}
+
+.hero-image img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%; /* Makes headshot circular */
+    border: 4px solid #FF7F11;
+}
+
+.hero-text h1 {
+    font-size: 2.5rem;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    font-size: 1.2rem;
+    color: #bbb;
+    margin-bottom: 20px;
+}
+
+/* Skills Tags */
+.skills-list {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.skill-tag {
+    background: #333;
+    color: #fff;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    border: 1px solid #555;
+}
+
+/* Sections */
+.section {
+    padding: 30px 0;
+}
+
+.section-title {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    border-left: 5px solid #FF7F11;
+    padding-left: 15px;
+    color: #fff;
+}
+
+/* Experience Cards */
+.experience-card {
+    background: rgba(20, 20, 20, 0.85);
+    padding: 25px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    border: 1px solid #333;
+}
+
+.experience-card h3 {
+    color: #fff;
+    font-size: 1.4rem;
+}
+
+.experience-card .company {
+    color: #fff;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Project Grid */
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.project-card {
+    background: rgba(20, 20, 20, 0.85);
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s;
+    border: 1px solid #333;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    border-color: #007bff;
+}
+
+.project-img {
+    height: 180px;
+    background-size: cover;
+    background-position: center;
+    background-color: #333; /* Fallback color */
+}
+
+.project-info {
+    padding: 20px;
+}
+
+.project-info h3 {
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.project-link {
+    display: inline-block;
+    margin-top: 15px;
+    color: #FF7F11;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Resume PDF Viewer */
+.resume-container {
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.pdf-viewer {
+    flex: 1;
+    margin-top: 20px;
+    border: 1px solid #333;
+}
+
+footer {
+    text-align: center;
+    padding: 40px;
+    color: #777;
+    font-size: 0.9rem;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .hero-layout {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .skills-list {
+        justify-content: center;
+    }
+}
+
+/* Container for the contact icons */
+.contact-links {
+    margin-top: 20px; /* Space between headshot and icons */
+    display: flex;
+    justify-content: center; /* Ensures icons are centered under the image */
+    gap: 20px; /* Space between the icons */
+}
+
+/* Styling the individual icon links */
+.contact-links a {
+    color: #bbb; /* Slightly muted color so they don't distract too much */
+    font-size: 1.6rem; /* Good size for readability */
+    text-decoration: none;
+    transition: all 0.3s ease; /* Smooth transition for hover effects */
+}
+
+/* Hover effects */
+.contact-links a:hover {
+    color: #9ee1fb; /* Use your accent color on hover */
+    transform: translateY(-3px); /* A subtle lift effect */
+}
