@@ -46,9 +46,10 @@
                 <div class="skills-list">
                     <span class="skill-tag">Machine Learning</span>
                     <span class="skill-tag">Computer Vision</span>
+                    <span class="skill-tag">Generative Models</span>
                     <span class="skill-tag">LLMs</span>
                     <span class="skill-tag">RAG Systems</span>
-                    <span class="skill-tag">Graph Algorithms</span>
+                    <span class="skill-tag">Agentic Systems</span>
                 </div>
             </div>
         </div>
@@ -60,20 +61,37 @@
             
             <div class="experience-card">
                 <h3>AI Engineer Intern</h3>
-                <p class="company">Citrus Oncology | June 2025 - Sep 2025</p>
-                <p class="desc">
-                    Architected RAG systems using Qwen3 and LangGraph to automate clinical reporting. 
-                    Developed pipelines extracting data from complex EHRs with 86% precision.
-                    <br><em>(Work is under NDA)</em>
+                <p class="company" style="display: flex; justify-content: space-between;">
+                    <span>Citrus Oncology</span>
+                    <span>Jun. 2025 - Sep. 2025</span>
                 </p>
+                <ul style="padding-left: 20px; list-style-type: disc;">
+                    <li>Architected a RAG system using Qwen3 that extracts data from natural language chats and Electronic Health Records, grounding differential diagnoses in SOAP-format</li>
+                    <li>Developed a real-time AI Agent using LangGraph and Gemini for dynamic clinical decision support and data extraction, autonomously updating clinical reports from live physician interactions</li>
+                </ul>
+                <div class="tech-stack">
+                    <span class="tech-micro-tag">RAG</span>
+                    <span class="tech-micro-tag">LangGraph</span>
+                    <span class="tech-micro-tag">Qwen3</span>
+                    <span class="tech-micro-tag">SQLite</span>
+                </div>
             </div>
 
             <div class="experience-card">
                 <h3>Research Intern</h3>
-                <p class="company">Institute of Information Science, Academia Sinica | Jun 2023 - Feb 2024</p>
-                <p class="desc">
-                    Advised by Prof. Meng-Chan Chen. Extracted knowledge graphs from CTI reports and enhanced entity extraction using LLMs and Semantic Role Labeling.
+                <p class="company" style="display: flex; justify-content: space-between;">
+                    <span>Institute of Information Science, Academia Sinica</span>
+                    <span>Jun. 2023 - Feb. 2024</span>
                 </p>
+                Advised by Prof. Meng-Chan Chen. 
+                <ul style="padding-left: 20px; list-style-type: disc;">
+                    <li>Enhanced entity extraction robustness by combining LLM with Semantic Role Labeling (SRL), improving recall rate by 10%through more accurate detection of entities and their semantic relationships</li>
+                    <li>Constructed a knowledge graph database and applied graph matching algorithms to identify potential Mitre ATT&CK Tactics,Techniques, and Procedures (TTPs), achieving a 44% recall rate</li>
+                </ul>
+                <div class="tech-stack">
+                    <span class="tech-micro-tag">spaCy</span>
+                    <span class="tech-micro-tag">Hugging Face</span>
+                </div>
             </div>
         </div>
     </section>
@@ -87,8 +105,13 @@
                     <div class="project-img" style="background-image: url('images/CSIRO.png');"></div>
                     <div class="project-info">
                         <h3>CSIRO - Image2Biomass</h3>
-                        <p>Kaggle Competition: Ranked 968/3803. Biomass prediction using computer vision techniques.</p>
-                        <a href="#" class="project-link">View Project &rarr;</a>
+                        <p>Kaggle Competition: Ranked 968/3803. Biomass prediction using DinoV3.</p>
+                        <div class="tech-stack">
+                            <span class="tech-micro-tag">DinoV3</span>
+                            <span class="tech-micro-tag">Computer Vision</span>
+                            <span class="tech-micro-tag">Weakly Supervised Learning</span>
+                        </div>
+                        <a href="https://github.com/d0703887/CSIRO-Image2Biomass-Prediction" class="project-link">View Project &rarr;</a>
                     </div>
                 </div>
 
@@ -97,7 +120,27 @@
                     <div class="project-info">
                         <h3>Web Agent</h3>
                         <p>An AI agent with a planner model integrated into the Gemini-Computer-Use framework.</p>
-                        <a href="#" class="project-link">View Project &rarr;</a>
+                        <div class="tech-stack">
+                            <span class="tech-micro-tag">Gemini 2.5 Computer Use model</span>
+                            <span class="tech-micro-tag">LLM Agents</span>
+                            <span class="tech-micro-tag">Web Agents</span>
+                        </div>
+                        <a href="https://github.com/d0703887/Web-Agent" class="project-link">View Project &rarr;</a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-img" style="background-image: url('images/Language-Guided.png');"></div>
+                    <div class="project-info">
+                        <h3>Language Guided Fine-grained Image Editing</h3>
+                        <p>A zero-shot image editing framework integrating Llama 3.2, Grounded-SAM, and Stable Diffusion XL.</p>
+                        <div class="tech-stack">
+                            <span class="tech-micro-tag">Segment Anything Model</span>
+                            <span class="tech-micro-tag">Llama 3.2</span>
+                            <span class="tech-micro-tag">Stable Diffusion XL</span>
+                            <span class="tech-micro-tag">Inpainting</span>
+                        </div>
+                        <a href="https://github.com/d0703887/Language-Guided-Fine-Grained-Image-Editing" class="project-link">View Project &rarr;</a>
                     </div>
                 </div>
 
@@ -105,8 +148,13 @@
                     <div class="project-img" style="background-image: url('images/Eedi.png');"></div>
                     <div class="project-info">
                         <h3>Eedi - Mining Misconceptions</h3>
-                        <p>Analyzing mathematical misconceptions using machine learning models.</p>
-                        <a href="#" class="project-link">View Project &rarr;</a>
+                        <p>Kaggle Competition: Ranked 609/1446. Analyzing student's mathematical misconceptions using Qwen2.5-Math.</p>
+                        <div class="tech-stack">
+                            <span class="tech-micro-tag">Qwen2.5</span>
+                            <span class="tech-micro-tag">Hugging Face</span>
+                            <span class="tech-micro-tag">Text Embedding Models</span>
+                        </div>
+                        <a href="https://github.com/d0703887/Eedi-Mining-Misconceptions-in-Mathematics" class="project-link">View Project &rarr;</a>
                     </div>
                 </div>
 
@@ -115,16 +163,11 @@
                     <div class="project-info">
                         <h3>3D Indoor Scene Segmentation</h3>
                         <p>Long-tail segmentation for complex indoor 3D environments.</p>
-                        <a href="#" class="project-link">View Project &rarr;</a>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-img" style="background-image: url('images/Language-Guided.png');"></div>
-                    <div class="project-info">
-                        <h3>Language Guided Fine-grained Image Editing</h3>
-                        <p>Long-tail segmentation for complex indoor 3D environments.</p>
-                        <a href="#" class="project-link">View Project &rarr;</a>
+                        <div class="tech-stack">
+                            <span class="tech-micro-tag">CLIP</span>
+                            <span class="tech-micro-tag">3D Segmentation</span>
+                        </div>
+                        <a href="https://github.com/d0703887/NTU-DLCV-2022/tree/main/finalProject" class="project-link">View Project &rarr;</a>
                     </div>
                 </div>
 
@@ -133,9 +176,27 @@
                     <div class="project-info">
                         <h3>Diffusion Steering</h3>
                         <p>Experimental project exploring diffusion models for swimming photography.</p>
-                        <a href="#" class="project-link">View Project &rarr;</a>
+                        <div class="tech-stack">
+                            <span class="tech-micro-tag">Human Keypoint Detection</span>
+                            <span class="tech-micro-tag">Stable Diffusion</span>
+                            <span class="tech-micro-tag">AutoEncoder</span>
+                        </div>
+                        <a href="https://github.com/d0703887/Diffusion-Steering-for-Swimming-Photo" class="project-link">View Project &rarr;</a>
                     </div>
                 </div>
+                
+                <div class="project-card">
+                    <div class="project-img" style="background-image: url('images/Trajectory.gif');"></div>
+                    <div class="project-info">
+                        <h3>Trajectory Forecasting</h3>
+                        <p>Predicting ego vehicle's future trajectory based on nearby vehicles' trajectory.</p>
+                        <div class="tech-stack">
+                            <span class="tech-micro-tag">Trajectory Prediction</span>
+                        </div>
+                        <a href="https://github.com/d0703887/UCSD-CSE251B-Trajectory-Forecasting" class="project-link">View Project &rarr;</a>
+                    </div>
+                </div>
+
 
             </div>
         </div>

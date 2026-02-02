@@ -243,3 +243,29 @@ footer {
     color: #9ee1fb; /* Use your accent color on hover */
     transform: translateY(-3px); /* A subtle lift effect */
 }
+
+/* Container for tags within cards */
+.tech-stack {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 12px;
+    margin-bottom: 15px; /* Spacing before the 'View Project' link */
+}
+
+/* The Micro-Tag styling */
+.tech-micro-tag {
+    font-size: 0.75rem;
+    color: #bbb; /* Muted text so it doesn't compete with the title */
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid #444;
+    padding: 3px 8px;
+    border-radius: 4px;
+    transition: all 0.2s ease;
+}
+
+/* Optional: Hover effect to make them pop slightly */
+.project-card:hover .tech-micro-tag {
+    border-color: #666;
+    color: #fff;
+}
