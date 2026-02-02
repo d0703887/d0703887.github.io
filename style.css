@@ -73,7 +73,7 @@ nav {
     align-items: center;
     gap: 40px;
     background: transparent; /* Improves readability over wallpaper */
-    padding: 40px 40px 0px;
+    padding: 40px 40px 20px;
 }
 
 .hero-image img {
